@@ -1,0 +1,26 @@
+
+/* Here, I'm creating several custom properties to be used across the entirety of the site! */
+:root {
+    /* Color Palette */
+    --bc-burgundy: #A20641; /* "bc" custom properties are for "Brooklyn College" properties. */
+    --bc-orange: #FAB63D;
+    /* ______________________________________________________ */
+    
+}
+
+
+/* Classes */
+.bold {
+	font-weight: bold;
+}
+
+.indigo-shadow {
+    text-shadow: 0, 0, 8px #011D49;
+}
+
+.taxi-shadow {
+	text-shadow: 0, 0, 8px #FFB71B;
+}
+
+
+/* IDs */
