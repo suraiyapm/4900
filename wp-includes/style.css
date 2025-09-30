@@ -3,8 +3,21 @@
 :root {
     /* Color Palette */
     --bc-burgundy: #A20641; /* "bc" custom properties are for "Brooklyn College" properties. */
-    --bc-orange: #FAB63D;
+    --bc-orange: #FAB63D; /* Several of these, after the main/primary colors, are obtained through CUNY's official palette, including accent colors. */
+    --cuny-blue: #0033A1;
+    --cuny-taxi: #FFB71B;
+    --cuny-indigo: #011D49;
+    --cuny-azure: #1F5CFF;
+    --cuny-sky: #A3C9FF;
+    --cuny-cream: #FFFCD5;
+    --cuny-thistle: #DEC2EB;
+    --cuny-mint: #B5EBD8;
+    --cuny-sea-green: #005C5A;
+    --cuny-pearl: #F7F4EB;
+    --cuny-slate: #688197;
     /* ______________________________________________________ */
+
+
     
 }
 
@@ -22,5 +35,9 @@
 	text-shadow: 0, 0, 8px #FFB71B;
 }
 
+    /* ______________________________________________________ */
+
 
 /* IDs */
+
+    /* ______________________________________________________ */
