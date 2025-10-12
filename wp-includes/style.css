@@ -16,24 +16,51 @@
     --cuny-pearl: #F7F4EB;
     --cuny-slate: #688197;
     /* ______________________________________________________ */
-
-
+        /* For ease of changing: */
+    --text-shadow: var(--cuny-indigo);
+    --box-shadow: var(--cuny-indigo);
     
 }
 
+/* Neumorphism/Glassmorphism/Main aesthetic theme stuff */
+/* Neumorphism experimentation: */
+/* .color-background {
+    /* padding: 2em;
+    border: black solid 1px;
+    border-radius:40px; */
+    /* background: color-mix(in srgb, ); */
+    /* continue this later */
+/* } */
+
+/* Glassmorphism experimentation: */
+.frosted {
+    backdrop-filter:blur(2px) !important;
+    background:rgba(255, 255, 255, 0.103);
+}
+
+/* MAIN */
+.card {
+    border-radius:16px !important;
+    border-top:1px groove rgba(108,108,108,0.02);
+    border-left:1px groove rgba(92,92,92,0.02);
+    border-right:1px groove rgba(92,92,92,0.02);
+    border-bottom:1px groove rgba(108,108,108,0.02);
+}
 
 /* Classes */
 .bold {
 	font-weight: bold;
 }
 
-.indigo-shadow {
-    text-shadow: 0, 0, 8px #011D49;
+.text-shadow {
+    text-shadow: 0, 0, 8px var(--text-shadow);
 }
 
 .taxi-shadow {
 	text-shadow: 0, 0, 8px #FFB71B;
 }
+
+
 
     /* ______________________________________________________ */
 
