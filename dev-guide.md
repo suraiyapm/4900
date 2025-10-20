@@ -7,4 +7,4 @@ draft details to elaborate further on:
     -custom properties, particularly the color palette, and the sites it is based on and comes from
     -wordpress file structure
     -google calendar api key info, calendar management
-    
+    -annotated screenshots
