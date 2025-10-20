@@ -5,6 +5,8 @@ Repo for 4900 project! This website (created and hosted using Academic Commons) 
 
 ## Sections:
 
+### Description (#description)
+
 ### CSS Stuff (#css)
 
 ### Faculty Guide (#fac-guide)
@@ -14,6 +16,10 @@ Repo for 4900 project! This website (created and hosted using Academic Commons) 
 .
 .
 .
+
+## Description {#description}
+
+
 
 ## CSS {#css}
 
