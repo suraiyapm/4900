@@ -7,4 +7,6 @@ points to add:
     -posts
     -group/site coupling
     -email blasts
-    
+    -(essentially user documentation, but regular use would be straightforward so primarily for faculty)
+    -use cases
+    -annotated screenshots
