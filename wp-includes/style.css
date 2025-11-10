@@ -48,16 +48,22 @@
 }
 
 /* Classes */
+.background-light {
+    background-color: var(--cuny-sky);
+}
 .bold {
 	font-weight: bold;
 }
-
+.header1 {
+    font-weight: bold;
+    text-shadow: 0, 2, 8px var(--text-shadow);
+}
 .text-shadow {
-    text-shadow: 0, 0, 8px var(--text-shadow);
+    text-shadow: 0, 2, 8px var(--text-shadow);
 }
 
 .taxi-shadow {
-	text-shadow: 0, 0, 8px #FFB71B;
+	text-shadow: 0, 2, 8px #FFB71B;
 }
 
 
