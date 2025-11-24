@@ -1,8 +1,10 @@
 /* Here, I'm creating several custom properties to be used across the entirety of the site! */
 :root {
     /* Color Palette */
-    --bc-burgundy: #A20641; /* "bc" custom properties are for "Brooklyn College" properties. */
-    --bc-orange: #FAB63D; /* Several of these, after the main/primary colors, are obtained through CUNY's official palette, including accent colors. */
+    --bc-burgundy: #A20641;
+    /* "bc" custom properties are for "Brooklyn College" properties. */
+    --bc-orange: #FAB63D;
+    /* Several of these, after the main/primary colors, are obtained through CUNY's official palette, including accent colors. */
     --cuny-blue: #0033A1;
     --cuny-taxi: #FFB71B;
     --cuny-indigo: #011D49;
@@ -15,105 +17,134 @@
     --cuny-pearl: #F7F4EB;
     --cuny-slate: #688197;
     /* ______________________________________________________ */
-        /* For ease of changing: */
-    --text-shadow: rgb( from var(--cuny-indigo) r g b / 25%);
+    /* For ease of changing: */
+    --text-shadow: rgb(from var(--cuny-indigo) r g b / 25%);
     --box-shadow: rgb(from var(--cuny-indigo) r g b / 25%);
---heading-color: var(--cuny-indigo);
---card-background-color:rgb(from var(--cuny-slate) r g b / 6%);
---bkg-tint-color: rgb(from var(--cuny-slate) r g b / 10%);
-}
+    --heading-color: var(--cuny-indigo);
+    --card-background-color: rgb(from var(--cuny-slate) r g b / 2%);
+    --bkg-tint-color: rgb(from var(--cuny-slate) r g b / 1%);
+    --background-color: rgb(from var(--cuny-slate) r g b / 5%);
 
-
-/* MAIN */
-
-.column-narrow, .wp-block-latest-posts_list, .has-dates, .has-author, .tribe-events-widget-events-list, .card {
-    border-radius:16px !important;
-    border-top:1px groove rgba(108,108,108,0.42) !important;
-    border-left:1px groove rgba(92,92,92,0.42) !important;
-    border-right:1px groove rgba(92,92,92,0.42) !important;
-    border-bottom:1px groove rgba(108,108,108,0.62) !important;
-
-padding: 16px;
-
-box-shadow: 0px 4px 6px var(--box-shadow),
-1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
--1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
-0px 0px 10px 4px rgb(from var(--box-shadow) r g b /20%) inset !important;
-
-background-color:var(--card-background-color) !important;
 
 }
 
-.wp-block-latest-posts_list, .has-dates, .has-author, .tribe-events-widget-events-list {
+    /* MAIN */
 
-padding: 14px !important;
-margin-left: 2px ;
-margin-right: 2px ;
+    .entry-content,
+    .column-narrow,
+    .tribe-events-widget-events-list,
+    .card {
+        border-radius: 6px !important;
+        border-top: 1px groove rgba(108, 108, 108, 0.42) !important;
+        border-left: 1px groove rgba(92, 92, 92, 0.42) !important;
+        border-right: 1px groove rgba(92, 92, 92, 0.42) !important;
+        border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
-}
+        padding: 16px;
 
-img {
-flex: 0 0 auto;
-}
+        box-shadow: 0px 4px 6px var(--box-shadow),
+            1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+            -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+            0px 0px 10px 4px rgb(from var(--box-shadow) r g b /20%) inset !important;
 
-.column-content, .bkg-tint {
-padding: 4px;
-border-radius: 4px;
-background-color: var(--bkg-tint-color);
-}
+        background-color: var(--card-background-color) !important;
+        backdrop-filter: blur(1px) !important;
+        background: rgba(255, 255, 255, 0.103);
 
-/* Classes */
-.background-light {
-    background-color: var(--cuny-sky);
-}
-.bkg-tint {
-background-color: var(--bkg-tint-color);
-}
-.bold {
-	font-weight: bold;
-}
-.frosted {
-    backdrop-filter:blur(2px) !important;
-    background:rgba(255, 255, 255, 0.103);
-}
-.header1 {
-    font-weight: bold;
-    text-shadow: 0px 2px 8px var(--text-shadow);
-}
-.text-shadow {
-    text-shadow: 0px 2px 8px var(--text-shadow);
-}
+    }
 
-.taxi-shadow {
-	text-shadow: 0px 2px 8px #FFB71B;
-}
+    .wp-block-latest-posts_list,
+    .has-dates,
+    .has-author,
+    .tribe-events-widget-events-list {
+
+        padding: 14px !important;
+        margin-left: 2px;
+        margin-right: 2px;
+
+    }
+
+    .column-content,
+    .bkg-tint {
+        padding: 4px;
+        border-radius: 4px;
+        background-color: var(--bkg-tint-color);
+    }
+
+
+    /* Background dotted pattern */
+    body {
+        background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.2) 10%, transparent 11%);
+        background-size: 15px 15px;
+        background-repeat: repeat;
+        background-color: var(--background-color);
+    }
+
+    /* Classes */
+    .background-light {
+        background-color: var(--cuny-sky);
+    }
+
+    .bkg-tint {
+        background-color: var(--bkg-tint-color);
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .frosted {
+        backdrop-filter: blur(2px) !important;
+        background: rgba(255, 255, 255, 0.103);
+    }
+
+    .header1 {
+        font-weight: bold;
+        text-shadow: 0px 2px 8px var(--text-shadow);
+    }
+
+    .text-shadow {
+        text-shadow: 0px 2px 8px var(--text-shadow);
+    }
+
+    .taxi-shadow {
+        text-shadow: 0px 2px 8px #FFB71B;
+    }
 
     /* ______________________________________________________ */
 
 
-/* IDs */
+    /* IDs */
 
     /* ______________________________________________________ */
 
 
 
-/* Overloading Academica */
-/* Gets rid of the displayed page name at the top. I think it's cleaner, but up to anybody's preference. */
-.title-header {
-display: none !important;
-}
-
-
-
-/* ______________________________________________________ */
+    /* Overloading Academica */
+    /* Gets rid of the displayed page name at the top. I think it's cleaner, but up to anybody's preference. */
+    .title-header {
+        display: none !important;
+    }
 
 
 
 
-/* scrapped misc: */
-/* Testing more aggressive, strong/specific selectors to beat the theme overrides -seems to slightly be working this way! */
+    /* Elements Direct */
 
-/* .wp-block-heading, .card, .frosted, .bold, .text-shadow {
+    h1,
+    h2 {
+        font-weight: bold;
+    }
+
+    /* ______________________________________________________ */
+
+
+
+
+    /* scrapped misc:
+    Testing more aggressive, strong/specific selectors to beat the theme overrides -seems to slightly be working this way!
+
+    .wp-block-heading, .card, .frosted, .bold, .text-shadow {
 
 color: var(--heading-color);
 
@@ -150,4 +181,8 @@ display:flex;
 flex-direction:row;
 align-items:start;
 
+
+img {
+flex: 0 0 auto;
+}
 */
