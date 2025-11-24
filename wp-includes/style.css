@@ -17,22 +17,21 @@
     /* ______________________________________________________ */
         /* For ease of changing: */
     --text-shadow: rgb( from var(--cuny-indigo) r g b / 25%);
-    --box-shadow: rgb(from var(--cuny-indigo) r g b / 50%);
+    --box-shadow: rgb(from var(--cuny-indigo) r g b / 25%);
 --heading-color: var(--cuny-indigo);
 --card-background-color:rgb(from var(--cuny-slate) r g b / 6%);
 --bkg-tint-color: rgb(from var(--cuny-slate) r g b / 10%);
-    
 }
 
 
 /* MAIN */
 
-.wp-block-latest-posts_list, .has-dates, .has-author, .tribe-events-widget-events-list, .card {
+.column-narrow, .wp-block-latest-posts_list, .has-dates, .has-author, .tribe-events-widget-events-list, .card {
     border-radius:16px !important;
     border-top:1px groove rgba(108,108,108,0.42) !important;
     border-left:1px groove rgba(92,92,92,0.42) !important;
     border-right:1px groove rgba(92,92,92,0.42) !important;
-    border-bottom:1px groove rgba(108,108,108,0.42) !important;
+    border-bottom:1px groove rgba(108,108,108,0.62) !important;
 
 padding: 16px;
 
