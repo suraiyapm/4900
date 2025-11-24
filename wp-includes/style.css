@@ -30,17 +30,19 @@
 
     /* MAIN */
 
-    .entry-content,
-    .column-narrow,
-    .tribe-events-widget-events-list,
-    .card {
+   /*  body:not(.page-id-261).entry-content,
+    body:not(.page-id-261) .column-narrow,
+    .tribe-events-widget-events-list, */
+
+body.page-id-53 .site-main,
+ .card {
         border-radius: 6px !important;
         border-top: 1px groove rgba(108, 108, 108, 0.42) !important;
         border-left: 1px groove rgba(92, 92, 92, 0.42) !important;
         border-right: 1px groove rgba(92, 92, 92, 0.42) !important;
         border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
-        padding: 16px;
+        padding: 4px;
 
         box-shadow: 0px 4px 6px var(--box-shadow),
             1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
@@ -48,7 +50,7 @@
             0px 0px 10px 4px rgb(from var(--box-shadow) r g b /20%) inset !important;
 
         background-color: var(--card-background-color) !important;
-        backdrop-filter: blur(1px) !important;
+        backdrop-filter: blur(1.6px) !important;
         background: rgba(255, 255, 255, 0.103);
 
     }
@@ -73,12 +75,30 @@
 
 
     /* Background dotted pattern */
-    body {
-        background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.2) 10%, transparent 11%);
+    body.page-id-53 {
+        background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.14) 10%, transparent 11%);
         background-size: 15px 15px;
         background-repeat: repeat;
         background-color: var(--background-color);
     }
+
+    body.page-id-261 {
+        background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.08) 10%, transparent 11%);
+        background-size: 15px 15px;
+        background-repeat: repeat;
+        background-color: var(--background-color);
+    }
+
+body.page-id-261 .wp-block-group.alignwide {
+
+border-radius:8px;
+
+        box-shadow: 0px 4px 6px var(--box-shadow),
+            1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+            -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+            0px 0px 10px 4px rgb(from var(--box-shadow) r g b /8%) inset !important;
+}
+
 
     /* Classes */
     .background-light {
