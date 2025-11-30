@@ -89,7 +89,14 @@ body.page-id-53 .site-main,
         background-color: var(--background-color);
     }
 
-body.page-id-261 .wp-block-group.alignwide {
+    body.page-id-291 {
+        background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.12) 10%, transparent 11%);
+        background-size: 15px 15px;
+        background-repeat: repeat;
+        background-color: var(--background-color);
+    }
+
+body.page-id-261 .wp-block-group.alignwide:not(.wp-container-core-group-is-layout-afc22aa2) {
 
 border-radius:8px;
 
@@ -99,6 +106,19 @@ border-radius:8px;
             0px 0px 10px 4px rgb(from var(--box-shadow) r g b /8%) inset !important;
 }
 
+body.page-id-291 .wp-block-columns.alignwide,
+body.page-id-291 .wp-block-group.alignwide
+ {
+
+border-radius:8px;
+
+        box-shadow: 0px 4px 6px var(--box-shadow),
+            1px 0px 4px 0px rgb(from var(--box-shadow) r g b /15%),
+            -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /15%),
+            0px 0px 10px 4px rgb(from var(--box-shadow) r g b /15%) inset !important;
+
+padding:50px;
+}
 
     /* Classes */
     .background-light {
@@ -157,52 +177,3 @@ border-radius:8px;
     }
 
     /* ______________________________________________________ */
-
-
-
-
-    /* scrapped misc:
-    Testing more aggressive, strong/specific selectors to beat the theme overrides -seems to slightly be working this way!
-
-    .wp-block-heading, .card, .frosted, .bold, .text-shadow {
-
-color: var(--heading-color);
-
-    border-radius:16px !important;
-    border-top:1px groove rgba(108,108,108,0.22);
-    border-left:1px groove rgba(92,92,92,0.22);
-    border-right:1px groove rgba(92,92,92,0.22);
-    border-bottom:1px groove rgba(108,108,108,0.22);
-background-color:var(--card-background-color);
-
-color: var(--heading-color);
-
-text-shadow: 0px 0px 6px var(--text-shadow);
-
-padding: 16px;
-
-box-shadow: 0px 6px 8px var(--box-shadow);
-}
-
-Neumorphism/Glassmorphism/Main aesthetic theme stuff
- Neumorphism experimentation: 
- .color-background {
-    padding: 2em;
-    border: black solid 1px;
-    border-radius:40px; 
-     background: color-mix(in srgb, ); 
-     continue this later 
- }
-Basically, many theme and academic commons related conflicts (a lot cannot be customized)
-Glassmorphism experimentation:
-
-
-display:flex;
-flex-direction:row;
-align-items:start;
-
-
-img {
-flex: 0 0 auto;
-}
-*/
