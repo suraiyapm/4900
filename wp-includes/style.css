@@ -184,19 +184,17 @@ body.page-id-275 .column.column-content.column-last {
     text-shadow: 0px 2px 8px #FFB71B;
 }
 
+/* For this highlight to only effect the About page (and if the classes actually worked as expected without requiring all the overrides, the theoretical hover-shading class). */
 
-
-.wp-block-media-text:hover,
+body.page-id-275 .wp-block-media-text.alignwide:hover,
 .hover-shading:hover {
-
     background-color: rgba(255, 255, 255, .8) !important;
-
 }
 
-
-body.site-main:not(body.page-id-291, body.page-id-53),
-body #content .post:hover {
-    filter: brightness(102%);
+body #content .post:hover,
+ul li.wp-block-rss__item:hover
+ {
+filter: brightness(102%);
 }
 
 
