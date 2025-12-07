@@ -28,6 +28,8 @@
 
 /* MAIN */
 /* Page IDs: 53 is for Home, 25 is News. 261 for Resources & Opportunities, 275 for About.   */
+
+
 body.page-id-53 .site-main,
 .card {
     border-radius: 6px !important;
@@ -184,8 +186,6 @@ body.page-id-275 .column.column-content.column-last {
     text-shadow: 0px 2px 8px #FFB71B;
 }
 
-/* For this highlight to only effect the About page (and if the classes actually worked as expected without requiring all the overrides, the theoretical hover-shading class). */
-
 body.page-id-275 .wp-block-media-text.alignwide:hover,
 .hover-shading:hover {
     background-color: rgba(255, 255, 255, .8) !important;
@@ -197,15 +197,21 @@ body.page-id-261 details.wp-block-details.is-layout:hover,
 body.page-id-261 details.wp-block-details:hover,
 body.page-id-261 details.wp-block-details:hover * */
 
-body #content .post:hover
- {
-filter: brightness(102%) !important;
+body #content .post:hover {
+    filter: brightness(102%) !important;
 }
+
 /* it was working at some point! */
-body.page-id-25 ul.wp-block-rss li.wp-block-rss__item:hover*
- {
-filter: brightness(120%) !important;
+body.page-id-25 li.wp-block-rss__item:hover,
+body.page-id-25 li.wp-block-rss__item:hover * {
+    filter: brightness(120%) !important;
 }
+
+body.page-id-261 details.wp-block-details:hover,
+body.page-id-261 details.wp-block-details:hover * {
+    filter: brightness(120%) !important;
+}
+
 
 
 /* ______________________________________________________ */
