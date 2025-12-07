@@ -191,10 +191,20 @@ body.page-id-275 .wp-block-media-text.alignwide:hover,
     background-color: rgba(255, 255, 255, .8) !important;
 }
 
-body #content .post:hover,
-ul li.wp-block-rss__item:hover
+/*
+body.page-id-25 ul li.wp-block-rss__item:hover*,
+body.page-id-261 details.wp-block-details.is-layout:hover,
+body.page-id-261 details.wp-block-details:hover,
+body.page-id-261 details.wp-block-details:hover * */
+
+body #content .post:hover
  {
-filter: brightness(102%);
+filter: brightness(102%) !important;
+}
+/* it was working at some point! */
+body.page-id-25 ul.wp-block-rss li.wp-block-rss__item:hover*
+ {
+filter: brightness(120%) !important;
 }
 
 
