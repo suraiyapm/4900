@@ -23,11 +23,11 @@
     --heading-color: var(--cuny-indigo);
     --card-background-color: rgb(from var(--cuny-slate) r g b / 2%);
     --bkg-tint-color: rgb(from var(--cuny-slate) r g b / 1%);
-    --background-color: rgb(from var(--cuny-slate) r g b / 2%);
+    --background-color: rgb(from var(--cuny-slate) r g b / 0.5%);
 }
 
 /* MAIN */
-/* Page IDs: 53 is for Home, 25 is News. 261 for Resources & Opportunities.   */
+/* Page IDs: 53 is for Home, 25 is News. 261 for Resources & Opportunities, 275 for About.   */
 body.page-id-53 .site-main,
 .card {
     border-radius: 6px !important;
@@ -96,7 +96,7 @@ body.page-id-261 {
 }
 
 body.page-id-291 {
-    background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.12) 10%, transparent 11%);
+    background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.05) 10%, transparent 15%);
     background-size: 15px 15px;
     background-repeat: repeat;
     background-color: var(--background-color);
@@ -123,10 +123,12 @@ body.page-id-291 .wp-block-group.alignwide {
         0px 0px 10px 4px rgb(from var(--box-shadow) r g b /15%) inset !important;
 
     padding: 50px;
+    backdrop-filter: blur(2px);
+    /* A little softer on the Media page, for fewer distractions and to keep it less busy when there are photos involved. */
 }
 
 body.page-id-275 {
-    background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.14) 8%, transparent 15%);
+    background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.14) 8%, transparent 12%);
     background-size: 15px 15px;
     background-repeat: repeat;
 }
@@ -138,12 +140,12 @@ body.page-id-275 .column.column-content.column-last {
     border-right: 1px groove rgba(92, 92, 92, 0.42) !important;
     border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
-    padding: 4px;
+    padding: 10px;
 
     box-shadow: 0px 4px 6px var(--box-shadow),
-        1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
-        -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
-        0px 0px 10px 4px rgb(from var(--box-shadow) r g b /20%) inset !important;
+        1px 0px 4px 0px rgb(from var(--box-shadow) r g b /6%),
+        -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /6%),
+        0px 0px 10px 4px rgb(from var(--box-shadow) r g b /12%) inset !important;
 
     background-color: var(--card-background-color) !important;
     backdrop-filter: blur(1.6px) !important;
@@ -182,27 +184,55 @@ body.page-id-275 .column.column-content.column-last {
     text-shadow: 0px 2px 8px #FFB71B;
 }
 
+
+
+.wp-block-media-text:hover,
+.hover-shading:hover {
+
+    background-color: rgba(255, 255, 255, .8) !important;
+
+}
+
+
+body.site-main:not(body.page-id-291, body.page-id-53),
+body #content .post:hover {
+    filter: brightness(102%);
+}
+
+
 /* ______________________________________________________ */
 
 
 /* IDs */
 
 /* Posts Page (a little weird to just get the ID for, but a general dotted bkg may be preferable if wanting the pages to be uniform. */
-#mm-0.mm-page.mm-slideout {
+
+/* Site header shading */
+#header.clearfix {
+    box-shadow: 0px 4px 6px var(--box-shadow),
+        1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+        -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+        0px 0px 10px 4px rgb(from var(--box-shadow) r g b /35%) inset;
+
+}
+
+/* Main Background (with page exclusions) */
+body:not(body.page-id-291, body.page-id-275, body.page-id-53) {
     background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.08) 14%, transparent 14%);
     background-size: 15px 15px;
     background-repeat: repeat;
     background-color: var(--background-color);
 }
 
-#main.site-main {
+body.site-main:not(body.page-id-291, body.page-id-53),
+body #content .post {
     border-radius: 4px !important;
     border-top: 1px groove rgba(108, 108, 108, 0.42) !important;
     border-left: 1px groove rgba(92, 92, 92, 0.42) !important;
     border-right: 1px groove rgba(92, 92, 92, 0.42) !important;
     border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
-    padding: 4px;
+    padding: 15px;
     margin-bottom: 20px;
 
     box-shadow: 0px 4px 6px var(--box-shadow),
@@ -211,7 +241,7 @@ body.page-id-275 .column.column-content.column-last {
         0px 0px 10px 4px rgb(from var(--box-shadow) r g b /8%) inset !important;
 
     background-color: var(--card-background-color) !important;
-    backdrop-filter: blur(1.6px) !important;
+    backdrop-filter: blur(1.8px) !important;
     background: rgba(255, 255, 255, .1);
 
 }
