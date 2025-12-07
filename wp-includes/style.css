@@ -24,16 +24,10 @@
     --card-background-color: rgb(from var(--cuny-slate) r g b / 2%);
     --bkg-tint-color: rgb(from var(--cuny-slate) r g b / 1%);
     --background-color: rgb(from var(--cuny-slate) r g b / 5%);
-
-
 }
 
 /* MAIN */
-
-/*  body:not(.page-id-261).entry-content,
-    body:not(.page-id-261) .column-narrow,
-    .tribe-events-widget-events-list, */
-
+/* Page IDs: 53 is for Home, 25 is News. 261 for Resources & Opportunities,   */
 body.page-id-53 .site-main,
 .card {
     border-radius: 6px !important;
@@ -43,6 +37,7 @@ body.page-id-53 .site-main,
     border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
     padding: 4px;
+margin-bottom:10px;
 
     box-shadow: 0px 4px 6px var(--box-shadow),
         1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
@@ -55,14 +50,23 @@ body.page-id-53 .site-main,
 
 }
 
-.wp-block-latest-posts_list,
-.has-dates,
-.has-author,
-.tribe-events-widget-events-list {
+.card, body.page-id-25 .site-main {
+    border-radius: 6px !important;
+    border-top: 1px groove rgba(108, 108, 108, 0.42) !important;
+    border-left: 1px groove rgba(92, 92, 92, 0.42) !important;
+    border-right: 1px groove rgba(92, 92, 92, 0.42) !important;
+    border-bottom: 1px groove rgba(108, 108, 108, 0.62) !important;
 
-    padding: 14px !important;
-    margin-left: 2px;
-    margin-right: 2px;
+    padding: 4px;
+margin-bottom:10px;
+
+    box-shadow: 0px 4px 6px var(--box-shadow),
+        1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+        -1px 0px 4px 0px rgb(from var(--box-shadow) r g b /10%),
+        0px 0px 10px 4px rgb(from var(--box-shadow) r g b /5%) inset !important;
+
+    backdrop-filter: blur(1.6px) !important;
+    background: rgba(255, 255, 255, 0.2);
 
 }
 
@@ -75,7 +79,8 @@ body.page-id-53 .site-main,
 
 
 /* Background dotted pattern */
-body.page-id-53 {
+body.page-id-53,
+body.page-id-25 {
     background-image: radial-gradient(circle at center, rgb(0, 0, 0, 0.14) 10%, transparent 11%);
     background-size: 15px 15px;
     background-repeat: repeat;
@@ -196,7 +201,6 @@ body.page-id-275 .column.column-content.column-last {
 
 
 /* Elements Direct */
-
 h1,
 h2 {
     font-weight: bold;
