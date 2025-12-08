@@ -81,3 +81,6 @@ You can also `schedule` posts from this menu! Under **Publish**, you can either 
 
 As more posts are added, the "Archives" block on the `right` widget column in Default Template pages of the site (sidebars are not shown on some Full Width/Wide pages) will automatically add more months and years. When clicked, those lead to a page displaying all the posts from that month. On the `left` sidebar, the "Tag Cloud" block will automatically add tags from posts, and the tags more frequently used will appear larger in size than tags that are used less frequently.
 
+### Extras
+
+For the group coupled with the website, you can change default user settings for, essentially, email blasts, and things like that. The group is synced up with the website calendar, and has an extra RSS feed that was one of very, very few I was able to find for CUNY sites.
