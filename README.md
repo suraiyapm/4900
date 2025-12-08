@@ -38,8 +38,9 @@
 
 ## Description {#description}
 
-The goal of this project is to create a platform to support a seamless transition between student and industry for CUNY CIS students. Upon completion, the website will be made public on CUNY Academic Commons, and be available for regular use by students, alumni, faculty, and potentially industry professionals.
-A project thought up by Fendja Larivaux, Academic Program Specialist, Brooklyn College CIS Connect will provide a vast selection of accessible CIS resources for both academia and professional guidance. Additionally, it will provide an easy way for faculty to post about relevant events both on and off campus, and allow students to be kept in the loop (and have control over the frequency of emails).
+`The goal of this project is to create a platform to support a seamless transition between student and industry for CUNY CIS students.`
+Upon completion, the website has been made public on CUNY Academic Commons, and be available for regular use by students, alumni, faculty, and potentially industry professionals!
+A project thought up by **Fendja Larivaux**, Academic Program Specialist, Brooklyn College CIS Connect will provide a vast selection of accessible CIS resources for both academia and professional guidance. Additionally, it will provide an easy way for faculty to post about relevant events both on and off campus, and allow students to be kept in the loop (and have control over the frequency of emails).
 The site also has some synced news feeds and event calendars to further make being aware of potential opportunities as straightforward as possible.
 
 ## CSS {#css}
@@ -50,10 +51,10 @@ The site also has some synced news feeds and event calendars to further make bei
 
 [Click to view Faculty Guide!](faculty-guide.md)
 
-The faculty guide will serve as a walkthrough for faculty-use of the website. This will explain everything that goes into creating posts, managing the calendars, and other site functions relevant to the various faculty members that may use it. It will loosely go over some relevant Commons Dashboard functionalities as well.
+The faculty guide is meant to serve as a walkthrough for faculty-use of the website. This is meant to explain everything that goes into creating posts, managing the calendars, and other site functions relevant to the various faculty members that may use it. It loosely goes over some relevant Commons Dashboard functionalities as well.
 
 ## Dev Guide {#dev-guide}
 
 [Click to view Dev Guide!](dev-guide.md)
 
-The developer guide will explain various details I've come to learn through working on this project, that may not be very clear or intuitive, regarding working on the website, and the editor itself. This will include regular documentation details to support consistent code and styles (including some naming conventions and CSS information), as well as some things that come up when working on the project, and how to take advantage of certain features.
+The developer guide is meant to explain various details I've come to learn through working on this project, that may not be very clear or intuitive, regarding working on the website, and the editor itself. This includes regular documentation details to support consistent code and styles (including some naming conventions and CSS information), as well as some things that come up when working on the project, and how to take advantage of certain features. It will also contain some information about limitations and restrictions with regards to Academic Commons, as well as possible paths forward for future devs (or, at least, things that I would personally explore if I had more time).
