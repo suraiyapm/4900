@@ -33,7 +33,7 @@
 <!-- Commenting out the FULL size version of the logo, 2048x2048 -->
 <!-- ![image](media/current/Logo-Current_Suraiya-P-Mark.png) -->
 <img src="media\Current\Logo-Current_Suraiya-P-Mark.png" width="256" height="256">
-
+<!-- Note: This image embed specifically only works with \ instead of / on the GitHub side, regardless of showing up normally on local previews! -->
 
 
 ## Description {#description}
