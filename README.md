@@ -32,7 +32,7 @@
 
 <!-- Commenting out the FULL size version of the logo, 2048x2048 -->
 <!-- ![image](media/current/Logo-Current_Suraiya-P-Mark.png) -->
-<img src="Brooklyn-College-CIS-Connect/media/current/Logo-Current_Suraiya-P-Mark.png" width="256" height="256">
+<img src="media/Current/Logo-Current_Suraiya-P-Mark.png" width="256" height="256">
 
 
 
