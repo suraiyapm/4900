@@ -1,21 +1,40 @@
 
-# 4900 Project: Brooklyn College CIS Connect
+# Brooklyn College CIS Connect
 
-Repo for 4900 project! This website (created and hosted using Academic Commons) will serve as a tool for CIS students, and work to bridge the gap between academia and the industry.
+>This website (created and hosted using Academic Commons) serves as a tool for CIS students, and will work to:
+>>**bridge the gap between academia and the industry**!
 
 ## Sections:
 
-### Description (#description)
+### [Description](#description) 
 
-### CSS Stuff (#css)
+### [CSS Stuff](#css)
 
-### Faculty Guide (#fac-guide)
+### [Faculty Guide](#fac-guide)
 
-### Dev Guide (#dev-guide)
+### [Dev Guide](#dev-guide)
 
-.
-.
-.
+## Quick Links:
+
+- [Brooklyn College CIS Connect](https://cisbridge.commons.gc.cuny.edu/)
+
+- [CSS](wp-includes/style.css)
+
+- [Media](media) 
+  - [Current](media/Current/)
+  - [Events](media/Events/)
+  - [Works in Progress, Archived](media/WIPs,%20Archived/)
+
+- [Dev Guide](dev-guide.md)
+- [Faculty Guide](faculty-guide.md)
+
+
+
+<!-- Commenting out the FULL size version of the logo, 2048x2048 -->
+<!-- ![image](media/current/Logo-Current_Suraiya-P-Mark.png) -->
+<img src="media/current/Logo-Current_Suraiya-P-Mark.png" width="256" height="256">
+
+
 
 ## Description {#description}
 
